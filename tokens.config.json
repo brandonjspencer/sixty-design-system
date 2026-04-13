@@ -1,0 +1,44 @@
+{
+  "version": "1.0.0",
+  "name": "Design System Tokens",
+  "description": "Centralized design tokens with CSS custom properties and JSON exports",
+  "author": "Your Team",
+  "outputDirectory": "./dist",
+  "tokenFileExtension": ".json",
+  "formats": {
+    "css": {
+      "enabled": true,
+      "outputFile": "tokens.css",
+      "selector": ":root"
+    },
+    "json": {
+      "enabled": true,
+      "outputFile": "tokens.json"
+    },
+    "javascript": {
+      "enabled": true,
+      "outputFile": "tokens.js",
+      "exportName": "tokens"
+    },
+    "typescript": {
+      "enabled": true,
+      "outputFile": "tokens.d.ts"
+    }
+  },
+  "categories": [
+    "colors",
+    "typography",
+    "layout"
+  ],
+  "validation": {
+    "enforceNamingConventions": true,
+    "validateColorFormats": true,
+    "requireDescriptions": false,
+    "enforceUniqueness": true
+  },
+  "figmaIntegration": {
+    "enabled": true,
+    "configFile": "figma.config.json",
+    "envVariableName": "FIGMA_ACCESS_TOKEN"
+  }
+}

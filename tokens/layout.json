@@ -1,0 +1,130 @@
+{
+  "spacing": {
+    "0": {
+      "value": "0",
+      "description": "None"
+    },
+    "1": {
+      "value": "4px",
+      "description": "Extra small"
+    },
+    "2": {
+      "value": "8px",
+      "description": "Small"
+    },
+    "3": {
+      "value": "12px",
+      "description": "Small-medium"
+    },
+    "4": {
+      "value": "16px",
+      "description": "Medium"
+    },
+    "5": {
+      "value": "20px",
+      "description": "Medium-large"
+    },
+    "6": {
+      "value": "24px",
+      "description": "Large"
+    },
+    "7": {
+      "value": "28px",
+      "description": "Large-extra"
+    },
+    "8": {
+      "value": "32px",
+      "description": "Extra large"
+    },
+    "10": {
+      "value": "40px",
+      "description": "2X large"
+    },
+    "12": {
+      "value": "48px",
+      "description": "3X large"
+    },
+    "16": {
+      "value": "64px",
+      "description": "4X large"
+    }
+  },
+  "borderRadius": {
+    "none": {
+      "value": "0",
+      "description": "No radius"
+    },
+    "sm": {
+      "value": "4px",
+      "description": "Small radius"
+    },
+    "md": {
+      "value": "8px",
+      "description": "Medium radius"
+    },
+    "lg": {
+      "value": "12px",
+      "description": "Large radius"
+    },
+    "xl": {
+      "value": "16px",
+      "description": "Extra large radius"
+    },
+    "full": {
+      "value": "9999px",
+      "description": "Fully rounded"
+    }
+  },
+  "shadow": {
+    "sm": {
+      "value": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+      "description": "Small shadow"
+    },
+    "md": {
+      "value": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+      "description": "Medium shadow"
+    },
+    "lg": {
+      "value": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+      "description": "Large shadow"
+    },
+    "xl": {
+      "value": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+      "description": "Extra large shadow"
+    }
+  },
+  "zIndex": {
+    "base": {
+      "value": "0",
+      "description": "Base z-index"
+    },
+    "dropdown": {
+      "value": "1000",
+      "description": "Dropdown"
+    },
+    "sticky": {
+      "value": "1020",
+      "description": "Sticky"
+    },
+    "fixed": {
+      "value": "1030",
+      "description": "Fixed"
+    },
+    "modalBackdrop": {
+      "value": "1040",
+      "description": "Modal backdrop"
+    },
+    "modal": {
+      "value": "1050",
+      "description": "Modal"
+    },
+    "popover": {
+      "value": "1060",
+      "description": "Popover"
+    },
+    "tooltip": {
+      "value": "1070",
+      "description": "Tooltip"
+    }
+  }
+}

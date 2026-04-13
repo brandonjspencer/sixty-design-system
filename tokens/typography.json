@@ -1,0 +1,130 @@
+{
+  "typography": {
+    "fontFamily": {
+      "sans": {
+        "value": "system-ui, -apple-system, sans-serif",
+        "description": "System sans-serif font stack"
+      },
+      "mono": {
+        "value": "ui-monospace, monospace",
+        "description": "Monospace font stack"
+      }
+    },
+    "fontSize": {
+      "xs": {
+        "value": "12px",
+        "description": "Extra small"
+      },
+      "sm": {
+        "value": "14px",
+        "description": "Small"
+      },
+      "base": {
+        "value": "16px",
+        "description": "Base / Body"
+      },
+      "lg": {
+        "value": "18px",
+        "description": "Large"
+      },
+      "xl": {
+        "value": "20px",
+        "description": "Extra Large"
+      },
+      "2xl": {
+        "value": "24px",
+        "description": "2X Large"
+      },
+      "3xl": {
+        "value": "30px",
+        "description": "3X Large"
+      },
+      "4xl": {
+        "value": "36px",
+        "description": "4X Large"
+      }
+    },
+    "fontWeight": {
+      "regular": {
+        "value": "400",
+        "description": "Regular weight"
+      },
+      "medium": {
+        "value": "500",
+        "description": "Medium weight"
+      },
+      "semibold": {
+        "value": "600",
+        "description": "Semibold weight"
+      },
+      "bold": {
+        "value": "700",
+        "description": "Bold weight"
+      }
+    },
+    "lineHeight": {
+      "tight": {
+        "value": "1.2",
+        "description": "Tight line height"
+      },
+      "normal": {
+        "value": "1.5",
+        "description": "Normal line height"
+      },
+      "relaxed": {
+        "value": "1.75",
+        "description": "Relaxed line height"
+      }
+    },
+    "textStyle": {
+      "h1": {
+        "value": {
+          "fontSize": "36px",
+          "fontWeight": "700",
+          "lineHeight": "1.2"
+        },
+        "description": "Heading 1"
+      },
+      "h2": {
+        "value": {
+          "fontSize": "30px",
+          "fontWeight": "700",
+          "lineHeight": "1.2"
+        },
+        "description": "Heading 2"
+      },
+      "h3": {
+        "value": {
+          "fontSize": "24px",
+          "fontWeight": "600",
+          "lineHeight": "1.2"
+        },
+        "description": "Heading 3"
+      },
+      "body": {
+        "value": {
+          "fontSize": "16px",
+          "fontWeight": "400",
+          "lineHeight": "1.5"
+        },
+        "description": "Body text"
+      },
+      "bodySmall": {
+        "value": {
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "lineHeight": "1.5"
+        },
+        "description": "Small body text"
+      },
+      "caption": {
+        "value": {
+          "fontSize": "12px",
+          "fontWeight": "400",
+          "lineHeight": "1.5"
+        },
+        "description": "Caption text"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "design-system-tokens",
+  "version": "1.0.0",
+  "description": "Design system tokens with CSS custom properties and JSON tokens extracted from Figma library variables",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "generate-css": "node scripts/generate-css.js",
+    "generate-json": "node scripts/generate-json.js",
+    "extract-figma": "node scripts/extract-figma.js",
+    "dev": "node scripts/watch.js",
+    "validate": "node scripts/validate.js"
+  },
+  "keywords": [
+    "design-system",
+    "tokens",
+    "css",
+    "figma",
+    "design-tokens"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "chalk": "^5.3.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}

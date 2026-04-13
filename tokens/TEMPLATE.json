@@ -1,0 +1,14 @@
+{
+  "category": {
+    "subcategory": {
+      "tokenName": {
+        "value": "your-value-here",
+        "description": "Clear description of what this token is for"
+      },
+      "anotherToken": {
+        "value": "another-value",
+        "description": "Another token in the same subcategory"
+      }
+    }
+  }
+}

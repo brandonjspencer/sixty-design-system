@@ -1,0 +1,156 @@
+{
+  "colors": {
+    "primary": {
+      "50": {
+        "value": "#f0f9ff",
+        "description": "Primary - Lightest"
+      },
+      "100": {
+        "value": "#e0f2fe",
+        "description": "Primary - 100"
+      },
+      "200": {
+        "value": "#bae6fd",
+        "description": "Primary - 200"
+      },
+      "300": {
+        "value": "#7dd3fc",
+        "description": "Primary - 300"
+      },
+      "400": {
+        "value": "#38bdf8",
+        "description": "Primary - 400"
+      },
+      "500": {
+        "value": "#0ea5e9",
+        "description": "Primary - Base"
+      },
+      "600": {
+        "value": "#0284c7",
+        "description": "Primary - 600"
+      },
+      "700": {
+        "value": "#0369a1",
+        "description": "Primary - 700"
+      },
+      "800": {
+        "value": "#075985",
+        "description": "Primary - 800"
+      },
+      "900": {
+        "value": "#082f49",
+        "description": "Primary - Darkest"
+      }
+    },
+    "secondary": {
+      "50": {
+        "value": "#f5f3ff",
+        "description": "Secondary - Lightest"
+      },
+      "100": {
+        "value": "#ede9fe",
+        "description": "Secondary - 100"
+      },
+      "500": {
+        "value": "#a855f7",
+        "description": "Secondary - Base"
+      },
+      "900": {
+        "value": "#4c1d95",
+        "description": "Secondary - Darkest"
+      }
+    },
+    "success": {
+      "50": {
+        "value": "#f0fdf4",
+        "description": "Success - Lightest"
+      },
+      "500": {
+        "value": "#22c55e",
+        "description": "Success - Base"
+      },
+      "900": {
+        "value": "#14532d",
+        "description": "Success - Darkest"
+      }
+    },
+    "warning": {
+      "50": {
+        "value": "#fffbeb",
+        "description": "Warning - Lightest"
+      },
+      "500": {
+        "value": "#eab308",
+        "description": "Warning - Base"
+      },
+      "900": {
+        "value": "#422006",
+        "description": "Warning - Darkest"
+      }
+    },
+    "error": {
+      "50": {
+        "value": "#fef2f2",
+        "description": "Error - Lightest"
+      },
+      "500": {
+        "value": "#ef4444",
+        "description": "Error - Base"
+      },
+      "900": {
+        "value": "#4c0519",
+        "description": "Error - Darkest"
+      }
+    },
+    "neutral": {
+      "0": {
+        "value": "#ffffff",
+        "description": "White"
+      },
+      "50": {
+        "value": "#f9fafb",
+        "description": "Neutral - 50"
+      },
+      "100": {
+        "value": "#f3f4f6",
+        "description": "Neutral - 100"
+      },
+      "200": {
+        "value": "#e5e7eb",
+        "description": "Neutral - 200"
+      },
+      "300": {
+        "value": "#d1d5db",
+        "description": "Neutral - 300"
+      },
+      "400": {
+        "value": "#9ca3af",
+        "description": "Neutral - 400"
+      },
+      "500": {
+        "value": "#6b7280",
+        "description": "Neutral - 500"
+      },
+      "600": {
+        "value": "#4b5563",
+        "description": "Neutral - 600"
+      },
+      "700": {
+        "value": "#374151",
+        "description": "Neutral - 700"
+      },
+      "800": {
+        "value": "#1f2937",
+        "description": "Neutral - 800"
+      },
+      "900": {
+        "value": "#111827",
+        "description": "Neutral - 900"
+      },
+      "950": {
+        "value": "#030712",
+        "description": "Black"
+      }
+    }
+  }
+}
