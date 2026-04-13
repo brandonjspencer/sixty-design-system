@@ -1,0 +1,25 @@
+.sixty-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  height: 40px;
+  padding: 12px 20px;
+  border-radius: var(--radius-sm, 4px);
+  background: var(--color/buttons/ultimate/surface/default, #d55d1d);
+  color: var(--color/buttons/ultimate/text/default, #fff5e3);
+  border: none;
+  cursor: pointer;
+  font-family: var(--font/family/body, 'Pure Sans', sans-serif);
+  font-weight: var(--font/weight/semibold, 600);
+  font-size: var(--font-size/body/body-2, 14px);
+  line-height: var(--font/line-height/lh-16, 16px);
+  letter-spacing: var(--letter-spacing/buttons/button-default, 0.5px);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.sixty-button:focus-visible {
+  outline: 2px solid rgba(255, 245, 227, 0.8);
+  outline-offset: 2px;
+}
