@@ -1,67 +1,65 @@
-import type { ReactNode } from 'react';
-import './ButtonOptions.css';
+import type { ButtonHTMLAttributes, ReactNode } from 'react';
+import { Button, type ButtonVariant, type ButtonSize, type ButtonState } from './Button';
 
-const imgLeftIcon = 'https://www.figma.com/api/mcp/asset/14a92b30-4a18-4618-8e1d-877358d4d922';
-
-type ButtonPriority = 'Ultimate' | 'Primary' | 'Secondary' | 'Tertiary';
-type ButtonState = 'Default' | 'Hover-Focus' | 'Pressed' | 'Disabled';
-
-export interface ButtonOptionsProps {
-  priority?: ButtonPriority;
-  state?: ButtonState;
+export type ButtonOptionsProps = {
+  priority?: 'Ultimate' | 'Primary' | 'Secondary' | 'Tertiary';
+  state?: 'Default' | 'Hover-Focus' | 'Pressed' | 'Disabled';
+  size?: 'Small' | 'Default' | 'Large';
+  showLeftIcon?: boolean;
+  showRightIcon?: boolean;
+  leftIconSrc?: string;
+  rightIconSrc?: string;
   children?: ReactNode;
   className?: string;
-}
+} & Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'type'>;
+
+const variantMap: Record<NonNullable<ButtonOptionsProps['priority']>, ButtonVariant> = {
+  Ultimate: 'ultimate',
+  Primary: 'primary',
+  Secondary: 'secondary',
+  Tertiary: 'tertiary',
+};
+
+const sizeMap: Record<NonNullable<ButtonOptionsProps['size']>, ButtonSize> = {
+  Small: 'small',
+  Default: 'default',
+  Large: 'large',
+};
+
+const stateMap: Record<NonNullable<ButtonOptionsProps['state']>, ButtonState> = {
+  Default: 'default',
+  'Hover-Focus': 'hoverFocus',
+  Pressed: 'pressed',
+  Disabled: 'disabled',
+};
 
 export function ButtonOptions({
   priority = 'Ultimate',
   state = 'Default',
+  size = 'Default',
+  showLeftIcon = false,
+  showRightIcon = false,
+  leftIconSrc,
+  rightIconSrc,
   children = 'Button',
-  className = '',
+  className,
+  disabled,
+  ...props
 }: ButtonOptionsProps) {
-  const wrapperClasses = [
-    'sixty-button-options',
-    `sixty-button-options--${priority.toLowerCase()}`,
-    `sixty-button-options--${state.toLowerCase()}`,
-    state === 'Disabled' ? 'sixty-button-options--disabled' : '',
-    className,
-  ]
-    .filter(Boolean)
-    .join(' ');
-
-  const buttonClasses = [
-    'sixty-button-options__button',
-    `sixty-button-options__button--${priority.toLowerCase()}`,
-    `sixty-button-options__button--${state.toLowerCase()}`,
-  ]
-    .filter(Boolean)
-    .join(' ');
-
-  const textClasses = [
-    'sixty-button-options__label',
-    `sixty-button-options__label--${priority.toLowerCase()}`,
-    `sixty-button-options__label--${state.toLowerCase()}`,
-  ]
-    .filter(Boolean)
-    .join(' ');
-
-  const showSecondaryIcon = priority === 'Secondary' && state === 'Default';
-
   return (
-    <div className={wrapperClasses}>
-      <button type="button" className={buttonClasses} disabled={state === 'Disabled'}>
-        <div className="sixty-button-options__content">
-          {showSecondaryIcon && (
-            <img
-              className="sixty-button-options__icon"
-              src={imgLeftIcon}
-              alt=""
-              aria-hidden="true"
-            />
-          )}
-          <span className={textClasses}>{children}</span>
-        </div>
-      </button>
-    </div>
+    <Button
+      variant={variantMap[priority]}
+      state={stateMap[state]}
+      size={sizeMap[size]}
+      showLeftIcon={showLeftIcon}
+      showRightIcon={showRightIcon}
+      leftIconSrc={leftIconSrc}
+      rightIconSrc={rightIconSrc}
+      className={className}
+      disabled={state === 'Disabled' || disabled}
+      {...props}
+    >
+      {children}
+    </Button>
   );
 }
