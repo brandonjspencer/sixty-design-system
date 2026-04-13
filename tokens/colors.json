@@ -1,5 +1,72 @@
 {
   "colors": {
+    "everpure": {
+      "canvas": {
+        "value": "#F5F1E8",
+        "description": "Primary canvas background color from Everpure Design System",
+        "source": "Figma"
+      },
+      "orange": {
+        "value": "#FF8C00",
+        "description": "Primary orange accent color from Everpure Design System",
+        "source": "Figma"
+      },
+      "grey": {
+        "value": "#6B6B6B",
+        "description": "Neutral grey color",
+        "source": "Figma"
+      },
+      "grey-80": {
+        "value": "#CCCCCC",
+        "description": "Neutral grey at 80%",
+        "source": "Figma"
+      },
+      "grey-60": {
+        "value": "#999999",
+        "description": "Neutral grey at 60%",
+        "source": "Figma"
+      },
+      "grey-40": {
+        "value": "#B3B3B3",
+        "description": "Neutral grey at 40%",
+        "source": "Figma"
+      },
+      "grey-20": {
+        "value": "#E8E8E8",
+        "description": "Neutral grey at 20%",
+        "source": "Figma"
+      },
+      "white": {
+        "value": "#FFFFFF",
+        "description": "Pure white",
+        "source": "Figma"
+      },
+      "black": {
+        "value": "#000000",
+        "description": "Pure black",
+        "source": "Figma"
+      },
+      "sea": {
+        "value": "#1B6E8F",
+        "description": "Secondary sea blue",
+        "source": "Figma"
+      },
+      "rose": {
+        "value": "#E85B7E",
+        "description": "Secondary rose pink",
+        "source": "Figma"
+      },
+      "divider": {
+        "value": "#E8E8E8",
+        "description": "Color for divider lines",
+        "source": "Figma"
+      },
+      "footer-text": {
+        "value": "#333333",
+        "description": "Text color for footer",
+        "source": "Figma"
+      }
+    },
     "primary": {
       "50": {
         "value": "#f0f9ff",

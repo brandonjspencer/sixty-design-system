@@ -1,5 +1,77 @@
 {
   "typography": {
+    "spacing": {
+      "body-1-list": {
+        "value": "8px",
+        "description": "List spacing for Body 1 typography from Everpure",
+        "source": "Figma"
+      },
+      "body-2-list": {
+        "value": "6px",
+        "description": "List spacing for Body 2 typography from Everpure",
+        "source": "Figma"
+      },
+      "body-3-list": {
+        "value": "6px",
+        "description": "List spacing for Body 3 typography from Everpure",
+        "source": "Figma"
+      },
+      "body-4-list": {
+        "value": "4px",
+        "description": "List spacing for Body 4 typography from Everpure",
+        "source": "Figma"
+      },
+      "subtitle-1-list": {
+        "value": "6px",
+        "description": "List spacing for Subtitle 1 typography from Everpure",
+        "source": "Figma"
+      },
+      "subtitle-2-list": {
+        "value": "6px",
+        "description": "List spacing for Subtitle 2 typography from Everpure",
+        "source": "Figma"
+      },
+      "subtitle-3-list": {
+        "value": "6px",
+        "description": "List spacing for Subtitle 3 typography from Everpure",
+        "source": "Figma"
+      },
+      "body-1-paragraph": {
+        "value": "16px",
+        "description": "Paragraph spacing for Body 1 typography from Everpure",
+        "source": "Figma"
+      },
+      "body-2-paragraph": {
+        "value": "12px",
+        "description": "Paragraph spacing for Body 2 typography from Everpure",
+        "source": "Figma"
+      },
+      "body-3-paragraph": {
+        "value": "12px",
+        "description": "Paragraph spacing for Body 3 typography from Everpure",
+        "source": "Figma"
+      },
+      "body-4-paragraph": {
+        "value": "8px",
+        "description": "Paragraph spacing for Body 4 typography from Everpure",
+        "source": "Figma"
+      },
+      "card-stat-letter": {
+        "value": "0.5px",
+        "description": "Letter spacing for Card Stat typography from Everpure",
+        "source": "Figma"
+      },
+      "card-simple-letter": {
+        "value": "0px",
+        "description": "Letter spacing for Simple Card typography from Everpure",
+        "source": "Figma"
+      },
+      "faq-headline-letter": {
+        "value": "0.5px",
+        "description": "Letter spacing for FAQ Headline typography from Everpure",
+        "source": "Figma"
+      }
+    },
     "fontFamily": {
       "sans": {
         "value": "system-ui, -apple-system, sans-serif",
