@@ -1,16 +1,17 @@
 # Design System Tokens
 
-A comprehensive design system tokens project with CSS custom properties and JSON tokens extracted from Figma library variables.
+Everpure Design System: Sixty v4.0 - A comprehensive design system with tokens extracted from Figma library variables, CSS custom properties, and reusable React components.
 
 ## Features
 
 ✨ **Core Capabilities**
-- 📝 Define tokens in JSON format (colors, typography, spacing, shadows, etc.)
+- 📝 Tokens defined in JSON format (colors, typography, spacing, shadows, etc.)
 - 🎨 Auto-generate CSS custom properties (`:root` variables)
 - 📦 Export as JSON, JavaScript, and TypeScript modules
 - 🎯 Extract tokens directly from Figma library variables
 - ✅ Validate token naming conventions and formats
 - 👀 Watch mode for development
+- 🔘 Reusable Button component leveraging design tokens
 
 ## Quick Start
 
@@ -32,19 +33,16 @@ This generates:
 - `dist/tokens.js` - JavaScript module
 - `dist/tokens.d.ts` - TypeScript definitions
 
-### 3. Use in Your Project
+### 3. Use Tokens in Your Project
 
 **CSS:**
 ```css
-:root {
-  --colors-primary-500: #0ea5e9;
-  --colors-primary-900: #082f49;
-  --spacing-4: 16px;
-}
+@import './dist/tokens.css';
 
-.button {
-  padding: var(--spacing-4);
-  background-color: var(--colors-primary-500);
+.container {
+  padding: var(--spacing-lg);
+  background-color: var(--colors-everpure-canvas);
+  border-radius: var(--borderRadius-md);
 }
 ```
 
@@ -52,7 +50,7 @@ This generates:
 ```javascript
 import tokens from './dist/tokens.js';
 
-const primaryColor = tokens.colors.primary['500'].value;
+const canvasColor = tokens.colors.everpure.canvas.value;  // #F5F1E8
 ```
 
 **TypeScript:**
@@ -60,7 +58,24 @@ const primaryColor = tokens.colors.primary['500'].value;
 import type { Tokens } from './dist/tokens';
 import tokens from './dist/tokens.js';
 
-const buttonSpacing: string = tokens.spacing['4'].value;
+const canvasColor: string = tokens.colors.everpure.canvas.value;
+```
+
+### 4. Use the Button Component
+
+```typescript
+import { Button, type ButtonProps } from './Button';
+
+export function App() {
+  return (
+    <>
+      <Button variant="ultimate">Primary Action</Button>
+      <Button variant="primary">Secondary Action</Button>
+      <Button variant="secondary">Tertiary Action</Button>
+      <Button variant="tertiary">Ghost Action</Button>
+    </>
+  );
+}
 ```
 
 ## Token Structure
@@ -68,65 +83,88 @@ const buttonSpacing: string = tokens.spacing['4'].value;
 Tokens are organized in JSON files by category:
 
 ### colors.json
-- Primary, secondary, success, warning, error, neutral colors
-- Organized in tones (50, 100, 200, ... 900)
+- **everpure** - Everpure Design System colors (extracted from Figma)
+  - orange, grey (with opacity variants), white, black, sea, rose, divider, footer-text
+- **buttons** - Button component colors by variant
+  - ultimate, primary, secondary, tertiary
+  - Each with surface and text colors for: default, hover, pressed, disabled
+- **Primary, secondary, success, warning, error, neutral** - Standard color palettes
+  - Organized in tones (50, 100, 200, ... 900)
 
 ### typography.json
-- Font families (sans, mono)
-- Font sizes (xs through 4xl)
-- Font weights (regular through bold)
-- Text styles (h1-h3, body, caption)
+- **spacing** - List and paragraph line spacing from Figma typography styles
+- **fontFamily** - sans, mono stacks
+- **fontSize** - xs through 4xl
+- **fontWeight** - regular through bold
+- **lineHeight** - tight, normal, relaxed
 
 ### layout.json
-- Spacing scale (0-16)
-- Border radius (sm through full)
-- Box shadows (sm through xl)
-- Z-index levels
+- **spacing** - 0 to 16 (0px to 64px)
+- **borderRadius** - none to full
+- **shadow** - sm to xl
+- **zIndex** - base to tooltip
+
+## Components
+
+### Button Component
+
+Located in `Button.tsx` with corresponding styles in `Button.css`:
+
+**Features:**
+- **Variants:** ultimate, primary, secondary, tertiary
+- **States:** default, hover/focus, pressed, disabled
+- **Sizes:** small, default, large
+- **Icons:** Optional left/right icons
+- All colors sourced from `--colors-buttons-{variant}-{property}-{state}` tokens
+
+**Example:**
+```typescript
+<Button 
+  variant="ultimate" 
+  size="large"
+  showLeftIcon={true}
+  disabled={false}
+>
+  Click Me
+</Button>
+```
 
 ## Working with Figma
 
-### Extract Tokens from Figma
+### Sync Tokens from Figma
+
+This project is synced with the **Everpure Design System: Sixty v4.0 beta** Figma file.
+
+To update tokens from your own Figma library:
 
 1. **Get your Figma access token:**
    - Go to [figma.com/@yourname/settings](https://figma.com/@yourname/settings)
    - Scroll to "Personal access tokens"
    - Create a new token and copy it
 
-2. **Set up environment:**
-   ```bash
-   cp .env.example .env
-   # Edit .env and add your FIGMA_ACCESS_TOKEN
-   ```
-
-3. **Generate figma.config.json:**
-   ```bash
-   npm run extract-figma
-   ```
-   This creates a template config file.
-
-4. **Update figma.config.json:**
+2. **Configure figma.config.json:**
    ```json
    {
-     "fileKey": "YOUR_FIGMA_FILE_KEY"
+     "fileKey": "YOUR_FIGMA_FILE_KEY",
+     "description": "Your Figma design file"
    }
    ```
-   Get your file key from the Figma URL: `figma.com/design/{fileKey}`
+   Get your file key from the URL: `figma.com/design/{fileKey}`
 
-5. **Extract tokens:**
+3. **Extract tokens:**
    ```bash
-   npm run extract-figma
+   FIGMA_ACCESS_TOKEN=your_token npm run extract-figma
    ```
 
 ### Create Variables in Figma
 
 In your Figma design file:
-1. Go to **Design** panel
-2. Click **Variables** (or the Variables icon)
-3. Create a new collection (e.g., "Colors", "Spacing")
-4. Add variables with these naming patterns:
-   - `colors/primary/blue` → becomes `colors-primary-blue`
-   - `spacing/padding/lg` → becomes `spacing-padding-lg`
-   - `typography/font-family/sans` → becomes `typography-font-family-sans`
+1. Go to **Design** panel → **Variables** section
+2. Create a new collection (e.g., "Colors", "Spacing", "Typography")
+3. Add variables with naming patterns that match your token structure:
+   - `colors/buttons/ultimate/surface-default` → `colors-buttons-ultimate-surface-default`
+   - `spacing/padding/lg` → `spacing-padding-lg`
+   - `typography/font-family/sans` → `typography-font-family-sans`
 
 ## Development Workflow
 
