@@ -218,6 +218,144 @@
         "value": "#030712",
         "description": "Black"
       }
+    },
+    "buttons": {
+      "ultimate": {
+        "surface-default": {
+          "value": "#d55d1d",
+          "description": "Ultimate button background - default state"
+        },
+        "surface-hover": {
+          "value": "#ff7023",
+          "description": "Ultimate button background - hover/focus state"
+        },
+        "surface-pressed": {
+          "value": "#aa4b17",
+          "description": "Ultimate button background - pressed state"
+        },
+        "surface-disabled": {
+          "value": "#d55d1d",
+          "description": "Ultimate button background - disabled state"
+        },
+        "text-default": {
+          "value": "#fff5e3",
+          "description": "Ultimate button text - default state"
+        },
+        "text-hover": {
+          "value": "#fff5e3",
+          "description": "Ultimate button text - hover/focus state"
+        },
+        "text-pressed": {
+          "value": "#fff5e3",
+          "description": "Ultimate button text - pressed state"
+        },
+        "text-disabled": {
+          "value": "#fff5e3",
+          "description": "Ultimate button text - disabled state"
+        }
+      },
+      "primary": {
+        "surface-default": {
+          "value": "#5a6359",
+          "description": "Primary button background - default state"
+        },
+        "surface-hover": {
+          "value": "#767d75",
+          "description": "Primary button background - hover/focus state"
+        },
+        "surface-pressed": {
+          "value": "#4b534a",
+          "description": "Primary button background - pressed state"
+        },
+        "surface-disabled": {
+          "value": "#5a6359",
+          "description": "Primary button background - disabled state"
+        },
+        "text-default": {
+          "value": "#fff5e3",
+          "description": "Primary button text - default state"
+        },
+        "text-hover": {
+          "value": "#fff5e3",
+          "description": "Primary button text - hover/focus state"
+        },
+        "text-pressed": {
+          "value": "#fff5e3",
+          "description": "Primary button text - pressed state"
+        },
+        "text-disabled": {
+          "value": "#fff5e3",
+          "description": "Primary button text - disabled state"
+        }
+      },
+      "secondary": {
+        "stroke-default": {
+          "value": "#5f6e64",
+          "description": "Secondary button border - default state"
+        },
+        "stroke-hover": {
+          "value": "#767d75",
+          "description": "Secondary button border - hover/focus state"
+        },
+        "stroke-pressed": {
+          "value": "#4b534a",
+          "description": "Secondary button border - pressed state"
+        },
+        "stroke-disabled": {
+          "value": "#5f6e64",
+          "description": "Secondary button border - disabled state"
+        },
+        "surface-hover": {
+          "value": "#767d75",
+          "description": "Secondary button background - hover/focus state"
+        },
+        "surface-pressed": {
+          "value": "#4b534a",
+          "description": "Secondary button background - pressed state"
+        },
+        "text-default": {
+          "value": "#5a6359",
+          "description": "Secondary button text - default state"
+        },
+        "text-hover": {
+          "value": "#fff5e3",
+          "description": "Secondary button text - hover/focus state"
+        },
+        "text-pressed": {
+          "value": "#fff5e3",
+          "description": "Secondary button text - pressed state"
+        },
+        "text-disabled": {
+          "value": "#5a6359",
+          "description": "Secondary button text - disabled state"
+        }
+      },
+      "tertiary": {
+        "surface-hover": {
+          "value": "#767d75",
+          "description": "Tertiary button background - hover/focus state"
+        },
+        "surface-pressed": {
+          "value": "#4b534a",
+          "description": "Tertiary button background - pressed state"
+        },
+        "text-default": {
+          "value": "#5a6359",
+          "description": "Tertiary button text - default state"
+        },
+        "text-hover": {
+          "value": "#fff5e3",
+          "description": "Tertiary button text - hover/focus state"
+        },
+        "text-pressed": {
+          "value": "#fff5e3",
+          "description": "Tertiary button text - pressed state"
+        },
+        "text-disabled": {
+          "value": "#5a6359",
+          "description": "Tertiary button text - disabled state"
+        }
+      }
     }
   }
 }
